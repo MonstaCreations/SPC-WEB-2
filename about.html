@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | SP Consulting Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; }
+        .bg-sp-navy { background-color: #0F172A; }
+        .text-sp-blue { color: #2563EB; }
+        .blueprint-bg {
+            background-image: linear-gradient(#e5e7eb 1px, transparent 1px), linear-gradient(90deg, #e5e7eb 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .image-mask { clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%); }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+
+  <nav class="flex justify-between items-center px-6 py-6 border-b-2 border-slate-900 sticky top-0 bg-white z-50">
+    <a href="index.html" class="inline-flex items-baseline gap-2 group transition-opacity duration-300 hover:opacity-80">
+        <span class="text-3xl font-extrabold tracking-tighter text-sp-navy">SP</span>
+        <span class="text-xl font-bold tracking-widest text-slate-500">CONSULTING</span>
+    </a>
+    
+    <div class="hidden md:flex gap-10 font-bold text-sm tracking-widest">
+        <a href="index.html#services" class="hover:text-sp-blue transition">01 SERVICES</a>
+        <a href="index.html#projects" class="hover:text-sp-blue transition">02 PROJECTS</a>
+        <a href="about.html" class="hover:text-sp-blue transition">03 ABOUT</a>
+        <a href="index.html#contact" class="hover:text-sp-blue transition">04 CONTACT</a>
+    </div>
+</nav>
+
+<style>
+    /* Ensure the logo link doesn't show the system pointer */
+    a, button { cursor: none !important; }
+</style>
+
+    <section class="relative py-24 blueprint-bg border-b-2 border-slate-900 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-sp-blue font-bold tracking-[0.3em] uppercase text-xs block mb-4">// Technical Excellence Since inception</span>
+                <h1 class="text-7xl md:text-9xl font-extrabold text-sp-navy leading-none mb-8">
+                    Defining <br> <span class="text-sp-blue">Integrity.</span>
+                </h1>
+                <p class="text-xl text-slate-600 max-w-md border-l-4 border-sp-blue pl-6 italic">
+                    "Engineered to Simplify"—transforming complex structural challenges into safe, sustainable, and high-performance infrastructure.
+                </p>
+            </div>
+            <div class="relative">
+                <div class="bg-sp-navy p-2 image-mask shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80" alt="Consulting Team" class="w-full h-full object-cover grayscale opacity-80 hover:opacity-100 transition duration-500">
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-white border-2 border-slate-900 p-6 shadow-xl">
+                    <p class="text-sp-blue font-black text-4xl brand-font">100%</p>
+                    <p class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Compliance accuracy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12 text-center">
+                <div>
+                    <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-sp-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04m14.506 13.511L12 21l-5.888-1.543a12.016 12.016 0 01-7.111-12.872A11.952 11.952 0 0112 2c2.924 0 5.562 1.084 7.551 2.872a12.016 12.016 0 01-7.111 12.872L12 21z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 brand-font">Precision Audits</h3>
+                    <p class="text-slate-500 text-sm">Rigorous structural health monitoring to ensure long-term stability.</p>
+                </div>
+                <div>
+                    <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-sp-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 brand-font">Smart Infrastructure</h3>
+                    <p class="text-slate-500 text-sm">Advanced MEP and structural designs for high-efficiency modern buildings.</p>
+                </div>
+                <div>
+                    <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-sp-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 brand-font">Simplified Solutions</h3>
+                    <p class="text-slate-500 text-sm">Engineered to take the complexity out of large-scale engineering.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-sp-navy text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20">
+                <div>
+                    <span class="text-sp-blue font-bold tracking-[0.3em] uppercase text-xs block mb-4">// The Mindset</span>
+                    <h2 class="text-6xl font-extrabold brand-font">Our Core <span class="text-sp-blue">Philosophy.</span></h2>
+                </div>
+                <p class="max-w-md text-slate-400 mt-6 md:mt-0 italic">At SP Consulting, we believe that great engineering should be invisible—providing seamless safety and silent efficiency.</p>
+            </div>
+
+            <div class="border-t border-slate-700 pt-16">
+                <p class="text-3xl md:text-5xl font-light leading-tight">
+                    We bridge the gap between <span class="text-white font-bold">Complex Engineering Blueprints</span> and <span class="text-sp-blue font-bold">Practical Site Execution</span>. Our Bengaluru-based team ensures every project meets international safety standards with local precision.
+                </p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
