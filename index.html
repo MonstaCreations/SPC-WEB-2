@@ -24,13 +24,7 @@
 </head>
 <body class="bg-white text-slate-900">   
 
-    <div class="bg-sp-navy text-white py-2 px-6 text-xs flex justify-between items-center border-b border-slate-700">
-        <div class="flex gap-6">
-            <span>STRUCTURAL & MEP CONSULTANTS</span>
-            <span class="hidden md:inline">BENGALURU, INDIA</span>
-        </div>
-        <div class="font-bold text-blue-400">ENGINEERED TO SIMPLIFY</div>
-    </div>
+  
 
   <nav class="flex justify-between items-center px-6 py-6 border-b-2 border-slate-900 sticky top-0 bg-white z-50">
     <a href="index.html" class="inline-flex items-baseline gap-2 group transition-opacity duration-300 hover:opacity-80">
@@ -44,11 +38,50 @@
         <a href="about.html" class="hover:text-sp-blue transition">03 ABOUT</a>
         <a href="index.html#contact" class="hover:text-sp-blue transition">04 CONTACT</a>
     </div>
+
+    <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 focus:outline-none p-2">
+        <div class="w-6 h-0.5 bg-sp-navy"></div>
+        <div class="w-6 h-0.5 bg-sp-navy"></div>
+        <div class="w-6 h-0.5 bg-sp-navy"></div>
+    </button>
 </nav>
 
+<div id="mobile-sidebar" class="fixed inset-y-0 right-0 w-full sm:w-80 bg-sp-navy z-[100] transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="p-8">
+        <div class="flex justify-between items-center mb-16">
+            <span class="text-2xl font-black text-white tracking-tighter">SP MENU</span>
+            <button id="close-menu-btn" class="text-white text-3xl font-light">&times;</button>
+        </div>
+        <div class="flex flex-col gap-8 text-xl font-bold tracking-[0.2em] text-white uppercase brand-font">
+            <a href="index.html#services" class="mobile-link">01 SERVICES</a>
+            <a href="index.html#projects" class="mobile-link">02 PROJECTS</a>
+            <a href="about.html" class="mobile-link">03 ABOUT</a>
+            <a href="index.html#contact" class="mobile-link text-sp-blue">04 CONTACT</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const sidebar = document.getElementById('mobile-sidebar');
+    const links = document.querySelectorAll('.mobile-link');
+
+    const toggleMenu = () => sidebar.classList.toggle('translate-x-full');
+
+    menuBtn.addEventListener('click', toggleMenu);
+    closeBtn.addEventListener('click', toggleMenu);
+    links.forEach(link => link.addEventListener('click', toggleMenu));
+</script>
+
 <style>
-    /* Ensure the logo link doesn't show the system pointer */
-    a, button { cursor: none !important; }
+    /* Prevent default system cursor on all interactive elements */
+    a, button, select, input { cursor: none !important; }
+    
+    /* Ensure hero text scales properly for mobile */
+    @media (max-width: 768px) {
+        .hero-title { font-size: 4rem !important; line-height: 1 !important; }
+    }
 </style>
     <section class="relative min-h-[90vh] flex flex-col justify-end bg-slate-200">
         <div class="absolute inset-0 z-0">
